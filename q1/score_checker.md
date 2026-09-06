@@ -1,7 +1,7 @@
 # Clean Decision Code Makeover: Student Score Checker
 
 ## Part 1 - Analyze the Logic
-**Input**:
+**Input**
 : A number entered by the user, stored as a `float` to work with decimals.
 
 **Boundary Conditions**
