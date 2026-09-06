@@ -4,8 +4,8 @@
 **Input**
 : A number entered by the user, stored as a `float` to work with decimals.
 
-**Boundary Conditions**
-: Minimum Valid Score: `0`.  
+**Boundary Conditions**  
+: Minimum Valid Score: `0`  
 : Maximum Valid Score: `100`
 
 **Possible Outputs**
