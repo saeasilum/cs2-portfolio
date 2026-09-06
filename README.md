@@ -1,9 +1,9 @@
-# cs2-portfolio
+# CS2-Portfolio
 
 * **Name:** Sven Andrei E. Asilum
 
 * **Section:** 8 - Dahlia
 
 ## Links
-* [Hello World Script](q1/hello.py)
-* [Distance Calculation Script](q1/Asilum_SvenAndrei_Distance.py)
+> [Hello World Script](q1/hello.py)
+> [Distance Calculation Script](q1/Asilum_SvenAndrei_Distance.py)
