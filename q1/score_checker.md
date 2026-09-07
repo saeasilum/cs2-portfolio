@@ -52,13 +52,13 @@ End
 
 ## Testing & Validation
 
-| Test Case | Input Value | Expected Output | Actual Output | Pass / Fail |
-| :--- | :--- | :--- | :--- | :--- |
-| Negative Score | `-5` | `Invalid score` | `Invalid score` | Pass |
-| Out of Range | `105` | `Invalid score` | `Invalid score` | Pass |
-| Upper Boundary (90+) | `95` | `Outstanding` | `Outstanding` | Pass |
-| Exact Threshold (90) | `90` | `Outstanding` | `Outstanding` | Pass |
-| Mid-Range (80-89) | `84` | `Very Satisfactory` | `Very Satisfactory` | Pass |
-| Mid-Range (75-79) | `77` | `Satisfactory` | `Satisfactory` | Pass |
-| Lower Range (<75) | `60` | `Needs Improvement` | `Needs Improvement` | Pass |
-| Minimum Edge (0) | `0` | `Needs Improvement` | `Needs Improvement` | Pass |
+| Test | Input | Purpose | Expected Output | Actual Output | Result |
+| :---: | :---: | :--- | :--- | :--- | :---: |
+| 1 | -1 | Below minimum | Invalid score | Invalid score | Pass |
+| 2 | 0 | Minimum boundary | Needs Improvement | Needs Improvement | Pass |
+| 3 | 74 | Below Satisfactory boundary | Needs Improvement | Needs Improvement | Pass |
+| 4 | 75 | Satisfactory boundary | Satisfactory | Satisfactory | Pass |
+| 5 | 80 | Very Satisfactory boundary | Very Satisfactory | Very Satisfactory | Pass |
+| 6 | 90 | Outstanding boundary | Outstanding | Outstanding | Pass |
+| 7 | 100 | Maximum boundary | Outstanding | Outstanding | Pass |
+| 8 | 101 | Above maximum | Invalid score | Invalid score | Pass |
