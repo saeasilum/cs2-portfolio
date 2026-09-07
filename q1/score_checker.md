@@ -23,3 +23,29 @@ The `elif` / `else` chain checks valid scores step-by-step from highest to lowes
 
 ## Flowchart
 ![Score Checker Flowchart](flowchart.png)
+
+## Pseudocode
+```text
+Function Main
+    Declare Real score
+
+    Input score
+    If score < 0 or score > 100
+        Output "Invalid score"
+    Else
+        If score >= 90
+            Output "Outstanding"
+        Else
+            If score >= 80
+                Output "Very Satisfactory"
+            Else
+                If score >= 75
+                    Output "Satisfactory"
+                Else
+                    Output "Needs Improvement"
+                End
+            End
+        End
+    End
+End
+```
