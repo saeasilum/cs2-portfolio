@@ -31,11 +31,11 @@ What information does the program need?
 
 
 ## Possible Outputs
-1. `"Invalid score"`
-2. `"Outstanding"`
-3. `"Very Satisfactory"`
-4. `"Satisfactory"`
-5. `"Needs Improvement"`
+1. `Invalid score`
+2. `Outstanding`
+3. `Very Satisfactory`
+4. `Satisfactory`
+5. `Needs Improvement`
 
 ## Boundary Condition 
 > The initial check `if score < 0 or score > 100` filters out invalid scores outside the 0–100 range.
