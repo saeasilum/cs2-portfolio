@@ -23,10 +23,11 @@ What information does the program need?
 > A number entered by the user, stored as a `float` to work with decimals.
 
 ## Valid Range 
-**Minimum valid score:**    
-> `0`    
-**Maximum valid score:**    
+**Minimum valid score:** 
+> `0`
+**Maximum valid score:**
 > `100`
+
 
 ## Possible Outputs
 1. `"Invalid score"`
