@@ -38,7 +38,7 @@ What information does the program need?
 5. `"Needs Improvement"`
 
 ## Boundary Condition 
-> The initial check `if score < 0 or score > 100:` filters out invalid scores outside the 0–100 range.
+> The initial check `if score < 0 or score > 100` filters out invalid scores outside the 0–100 range.
 
 ## Multiple Decision Paths 
 > The `elif` / `else` chain checks valid scores step-by-step from highest to lowest to assign the right grade category.
