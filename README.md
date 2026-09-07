@@ -10,3 +10,5 @@
 > [Distance Calculation Script](q1/Asilum_SvenAndrei_Distance.py)
 
 > [Clean Decision Code Makeover: Student Score Checker](q1/score_checker.md)
+
+> [Clean Decision Code Makeover Script](q1/score_checker.py)
