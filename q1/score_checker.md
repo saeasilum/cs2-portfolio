@@ -88,4 +88,20 @@ End
 | 7 | 100 | Maximum boundary | Outstanding | Outstanding | Pass |
 | 8 | 101 | Above maximum | Invalid score | Invalid score | Pass |
 ---
-# Reflection 
+# Testing Reflection 
+### 1. Why is it important to test the values 0 and 100? 
+> It is important in order to make sure the program accepts the minimum and maximum passing/valid grades without giving an error.
+### 2. Why did you also test -1 and 101? 
+> I tested -1 and 101 to check if the program successfully rejects numbers that go below or above the allowed limit.
+### 3. Which test helped you understand boundary conditions the most? 
+> Testing 75, 80, and 90 helped me most as it showed how inclusive operators (`>=`) handle the exact cutoff scores.
+### 4. Did any of your tests initially fail? If yes, what did you change in your program? 
+> Yes, the invalid score tests initially failed because I wrote < 0 score < 100 by mistake instead of using the proper logical operators. This resulted in numbers greater than 100 being a valid number. I fixed it by changing the condition to score < 0 or score > 100 so that it correctly flags numbers outside the 0–100 range.
+---
+# Reflection
+### 1. How did selection structures make the program more useful? 
+> Selection structures allow the program to check different score ranges and print the right classification instead of running every line in order.
+### 2. How did proper comments and readable formatting improve your program? 
+> Proper comments and readable formatting make the code easy to read and help spot logic mistakes quickly.
+### 3. Why is it useful to plan the program using a flowchart and pseudocode before writing the code? 
+> It is useful to plan the program using a flowchart and pseudocode before writing the code as it gives a clear visual guide of how the conditions branch out, which saves time when translating it into Python.
