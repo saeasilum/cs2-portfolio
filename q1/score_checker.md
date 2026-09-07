@@ -20,3 +20,6 @@ The initial check `if score < 0 or score > 100:` filters out invalid scores outs
 
 **Selection Pattern - Multiple Decision Paths**  
 The `elif` / `else` chain checks valid scores step-by-step from highest to lowest to assign the right grade category.
+
+## Flowchart
+![Score Checker Flowchart](flowchart.png)
