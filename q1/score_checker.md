@@ -72,7 +72,7 @@ End
 ---
 # Part 4 - Clean Code Implementation 
 ## Source code 
-![Score Checker Source Code](./q1/score_checker.py) 
+![Score Checker Source Code](cs2-portfolio/q1/score_checker.py) 
 
 ---
 ## Testing & Validation
