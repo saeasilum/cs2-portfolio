@@ -1,6 +1,6 @@
 # Clean Decision Code Makeover: Student Score Checker
-**Name:** Sven Andrei E. Asilum
-**Section:** Dahlia
+**Name:** Sven Andrei E. Asilum    
+**Section:** Dahlia    
 ---
 ## Activity Overview
 
