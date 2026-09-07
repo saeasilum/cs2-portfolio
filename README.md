@@ -1,8 +1,8 @@
 # CS2-Portfolio
 
-* **Name:** Sven Andrei E. Asilum
+**Name:** Sven Andrei E. Asilum
 
-* **Section:** 8 - Dahlia
+**Section:** 8 - Dahlia
 
 ## Links
 > [Hello World Script](q1/hello.py)
