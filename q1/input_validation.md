@@ -1,8 +1,8 @@
 # Input Validation and Output Verification
-**Activity:** PSHS Workshop Registration Validator
+**Activity:** PSHS Workshop Registration Validator  
 **Name:** Sven Andrei E. Asilum
-**Section:** Dahlia
-**Quarter:** 1
+**Section:** Dahlia  
+**Quarter:** 1  
 ---
 ## Activity Overview
 In this activity, I created a program that validates information entered into a PSHS workshop registration
@@ -17,29 +17,26 @@ The program validates:
 
 ---
 # Part A - Validation Requirements
-Complete the table below before writing your program.
-| Data Captured | Expected Input | Validation Type | Invalid Input Example | Validation Rule | Error
-Message |
+| Data Captured | Expected Input | Validation Type | Invalid Input Example | Validation Rule | Error Message |
 |---|---|---|---|---|---|
-| Student Name | | | | | |
-| Age | | | | | |
-| Grade Level | | | | | |
-| Email Address | | | | | |
-| Registration Code | | | | | |
+| Student Name | Text / String | Presence Check | `""` (empty entry) | Must not be blank | Reason: Student name is required. |
+| Age | Integer | Data Type Check & Range Check | `"twelve"` or `10` | Must be a whole number between 11 and 18 inclusive | Reason: Age must be a number. / Reason: Age must be from 11 to 18. |
+| Grade Level | Integer | Data Type Check & Range Check | `"grade 8"` or `6` | Must be a whole number between 7 and 12 inclusive | Reason: Grade level must be a number. / Reason: Grade level must be from 7 to 12. |
+| Email Address | Text / String | Format / Domain Check | `student@gmail.com` | Must end with `@pshs.brc.edu.ph` | Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address. |
+| Registration Code | String | Length Check | `"12345"` or `"ABC1234"` | Must be exactly 6 characters long | Reason: The registration code must be exactly 6 characters. |
 ---
 ## Validation Questions
 ### 1. Why should the student name not be blank?
-> Write your answer here.
+> The student name should not be blank to identify who is registering. Leaving it empty would create an invalid record, which would cause prevent proper student identification, cause database errors, and make the workshop attendance more difficult.
 ### 2. Why should age be checked for both data type and range?
-> Write your answer here.
+> The age should be checked for both data type and range as checking the data type prevents the program from crashing if someone types letters, as for checking the data range makes sure the student is actually within the eligible age group (11 to 18) for the workshop.
 ### 3. Why should grade level only accept specific values?
-> Write your answer here.
+> The grade level should only accept specific values 7 to 12 to ensure that only secondary school students currently enrolled within the target program are admitted.
 ### 4. What format requirements did you use for the email address?
-> Write your answer here.
+> I converted the input to lowercase, stripped of whitespace, and that it must end with @pshs.brc.edu.ph to confirm the student belongs to the official school institution.
 ### 5. What length requirement did you use for the registration code?
-> Write your answer here.
+> I used an exact string length of 6 characters (len(code) == 6) to match the standardized format.
 ---
 # Part B - Program Design
-Before writing your program, create either a **flowchart or pseudocode** showing its logic.
 ## Flowchart
 Insert your flowchart below.
