@@ -235,7 +235,7 @@ print(f"Reg. Code    : {registration_code}")
 ## Verification Test 1
 **Input:**
 ```
-studentName ="Sven Asilum"
+studentName = "Sven Asilum"
 ageInput = "13"
 gradeInput = "8"
 email = "saeasilum@pshs.brc.edu.ph"
