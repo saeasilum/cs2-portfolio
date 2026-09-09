@@ -260,7 +260,7 @@ Grade Level  : Grade 8
 Email        : saeasilum@pshs.brc.edu.ph
 Reg. Code    : 451LUM
 ```
-**Result:** PASS
+**Result:** PASS    
 **Explanation:**
 > All inputs meet the required conditions (non-empty name, valid integer age within 11–18, valid integer grade within 7–12, correct institutional domain suffix, and an exact 6-character registration code). The program successfully displays the full student registration summary.
 ---
@@ -284,7 +284,7 @@ REGISTRATION NOT ACCEPTED
 ========================================
 Reason: Student name is required.
 ```
-**Result:** PASS
+**Result:** PASS    
 **Explanation:**
 > This is correct, as presence validation detects the blank name right away, stops the program, and displays the rejection message.
 ---
@@ -309,7 +309,7 @@ REGISTRATION NOT ACCEPTED
 ========================================
 Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address.
 ```
-**Result:** PASS
+**Result:** PASS    
 **Explanation:**
 > This is correct, as pattern validation checks the email suffix and rejects the entry because @gmail.com does not match the required domain (@pshs.brc.edu.ph).
 ---
