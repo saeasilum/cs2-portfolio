@@ -14,3 +14,7 @@
 > [Clean Decision Code Makeover: Student Score Checker](q1/score_checker.md)
 
 > [Clean Decision Code Makeover Script](q1/score_checker.py)
+
+> [PSHS Workshop Registration Validator](q1/input_validation.md)
+
+> [PSHS Workshop Registration Validator Script](q1/workshop_validator.py)
