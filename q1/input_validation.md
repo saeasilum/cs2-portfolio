@@ -329,6 +329,7 @@ Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address.
 ### 5. How did testing invalid inputs help you improve your program?
 > Testing invalid helped me improve my program by exposisng edge cases and potential bugs, helping refine the conditional logic to handle unexpected user inputs safely without crashing.
 
+#### Note
 > `Drafted by me, with a quick assist from AI for grammar checking.`
 ---
 # Files for This Activity
