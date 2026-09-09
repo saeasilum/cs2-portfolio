@@ -15,6 +15,6 @@
 
 > [Clean Decision Code Makeover Script](q1/score_checker.py)
 
-> [PSHS Workshop Registration Validator](q1/input_validation.md)
+> [Input Validation and Output Verification: PSHS Workshop Registration Validator](q1/input_validation.md)
 
 > [PSHS Workshop Registration Validator Script](q1/workshop_validator.py)
