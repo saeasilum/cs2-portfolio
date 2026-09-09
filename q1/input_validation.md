@@ -214,8 +214,7 @@ print(f"Reg. Code    : {registration_code}")
 ### Pattern Validation
 > Pattern validation was implemented on the Email Address using `email.lower().endswith("@pshs.brc.edu.ph")`. Converting the email to lowercase and also checking its suffix ensures the user enters a valid school address and blocks outside domains.
 ### Length Validation
-> Length validation was applied to the Registration Code using `len(registration_code) == 6.` Using Python's len() function ensures the string contains an exact count of 6 characters, mat
-> ching the required code format.
+> Length validation was applied to the Registration Code using `len(registration_code) == 6.` Using Python's len() function ensures the string contains an exact count of 6 characters, matching the required code format.
 ---
 # Part D - Testing
 | Test | Input / Condition | Validation Being Tested | Expected Output | Actual Output | Result |
@@ -243,7 +242,8 @@ registrationCode = "451LUM"
 
 ```
 **Expected Output:**
-```========================================
+```
+========================================
 REGISTRATION ACCEPTED
 ========================================
 Student Name : Sven Asilum
@@ -253,7 +253,8 @@ Email        : saeasilum@pshs.brc.edu.ph
 Reg. Code    : 451LUM
 ```
 **Actual Output:**
-```========================================
+```
+========================================
 REGISTRATION ACCEPTED
 ========================================
 Student Name : Sven Asilum
@@ -262,7 +263,7 @@ Grade Level  : Grade 8
 Email        : saeasilum@pshs.brc.edu.ph
 Reg. Code    : 451LUM
 ```
-**Result:** PASS    
+**Result:** **PASS**    
 **Explanation:**
 > All inputs meet the required conditions (non-empty name, valid integer age within 11–18, valid integer grade within 7–12, correct institutional domain suffix, and an exact 6-character registration code). The program successfully displays the full student registration summary.
 ---
@@ -276,18 +277,20 @@ email = "saamolina@pshs.brc.edu.ph"
 registrationCode = "M0L1N4"
 ```
 **Expected Output:**
-```========================================
+```
+========================================
 REGISTRATION NOT ACCEPTED
 ========================================
 Reason: Student name is required.
 ```
 **Actual Output:**
-```========================================
+```
+========================================
 REGISTRATION NOT ACCEPTED
 ========================================
 Reason: Student name is required.
 ```
-**Result:** PASS    
+**Result:** **PASS**    
 **Explanation:**
 > This is correct, as presence validation detects the blank name right away, stops the program, and displays the rejection message.
 ---
@@ -301,19 +304,21 @@ email = "chiponmyshoulder@gmail.com"
 registrationCode = "EMEF0R"
 ```
 **Expected Output:**
-```========================================
+```
+========================================
 REGISTRATION NOT ACCEPTED
 ========================================
 Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address.
 ```
 **Actual Output:**
 
-```========================================
+```
+========================================
 REGISTRATION NOT ACCEPTED
 ========================================
 Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address.
 ```
-**Result:** PASS    
+**Result:** **PASS**    
 **Explanation:**
 > This is correct, as pattern validation checks the email suffix and rejects the entry because @gmail.com does not match the required domain (@pshs.brc.edu.ph).
 ---
@@ -327,7 +332,7 @@ Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address.
 ### 4. Which validation technique was most challenging? Why?
 > Pattern validation was the most challenging for me because it requires precise string handling, such as lowercasing and checking specific domain suffixes, to ensure valid formatting.
 ### 5. How did testing invalid inputs help you improve your program?
-> Testing invalid helped me improve my program by exposisng edge cases and potential bugs, helping refine the conditional logic to handle unexpected user inputs safely without crashing.
+> Testing invalid helped me improve my program by exposing edge cases and potential bugs, helping refine the conditional logic to handle unexpected user inputs safely without crashing.
 
 #### Note
 > `Drafted by me, with a quick assist from AI for grammar checking.`
