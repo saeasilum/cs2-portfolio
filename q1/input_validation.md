@@ -38,5 +38,81 @@ The program validates:
 > I used an exact string length of 6 characters (len(code) == 6) to match the standardized format.
 ---
 # Part B - Program Design
-## Flowchart
-Insert your flowchart below.
+## Pseudocode
+
+```text
+Function Main
+    Declare String studentName
+    Declare String ageInput
+    Declare String gradeInput
+    Declare String email
+    Declare String registrationCode
+    Declare Integer age
+    Declare Integer gradeLevel
+
+    Input studentName
+    Input ageInput
+    Input gradeInput
+    Input email
+    Input registrationCode
+    If studentName == ""
+        Output "========================================"
+        Output "REGISTRATION NOT ACCEPTED"
+        Output "========================================"
+        Output "Reason: Student name is required."
+    Else
+        If isInteger(ageInput)
+            Assign age = toInteger(ageInput)
+            If age >= 11 and age <= 18
+                If isInteger(gradeInput)
+                    Assign gradeLevel = toInteger(gradeInput)
+                    If gradeLevel >= 7 and gradeLevel <= 12
+                        If endsWith(email, "@pshs.brc.edu.ph")
+                            If len(registrationCode) == 6
+                                Output "========================================"
+                                Output "REGISTRATION ACCEPTED"
+                                Output "========================================"
+                                Output "Student Name : " & studentName
+                                Output "Age          : " & age & " years old"
+                                Output "Grade Level  : Grade " & gradeLevel
+                                Output "Email        : " & email
+                                Output "Reg. Code    : " & registrationCode
+                            Else
+                                Output "========================================"
+                                Output "REGISTRATION NOT ACCEPTED"
+                                Output "========================================"
+                                Output "Reason: The registration code must be exactly 6 characters."
+                            End
+                        Else
+                            Output "========================================"
+                            Output "REGISTRATION NOT ACCEPTED"
+                            Output "========================================"
+                            Output "Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address."
+                        End
+                    Else
+                        Output "========================================"
+                        Output "REGISTRATION NOT ACCEPTED"
+                        Output "========================================"
+                        Output "Reason: Grade level must be from 7 to 12."
+                    End
+                Else
+                    Output "========================================"
+                    Output "REGISTRATION NOT ACCEPTED"
+                    Output "========================================"
+                    Output "Reason: Grade level must be a number."
+                End
+            Else
+                Output "========================================"
+                Output "REGISTRATION NOT ACCEPTED"
+                Output "========================================"
+                Output "Reason: Age must be from 11 to 18."
+            End
+        Else
+            Output "========================================"
+            Output "REGISTRATION NOT ACCEPTED"
+            Output "========================================"
+            Output "Reason: Age must be a number."
+        End
+    End
+End
+```
