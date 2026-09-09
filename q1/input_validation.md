@@ -324,6 +324,8 @@ Reason: Invalid email domain. Must be a valid @pshs.brc.edu.ph address.
 > Pattern validation was the most challenging for me because it requires precise string handling, such as lowercasing and checking specific domain suffixes, to ensure valid formatting.
 ### 5. How did testing invalid inputs help you improve your program?
 > Testing invalid helped me improve my program by exposisng edge cases and potential bugs, helping refine the conditional logic to handle unexpected user inputs safely without crashing.
+
+> `Drafted by me, with a quick assist from AI for grammar checking.`
 ---
 # Files for This Activity
 - [`workshop_validator.py`](workshop_validator.py)
