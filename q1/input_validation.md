@@ -214,7 +214,8 @@ print(f"Reg. Code    : {registration_code}")
 ### Pattern Validation
 > Pattern validation was implemented on the Email Address using `email.lower().endswith("@pshs.brc.edu.ph")`. Converting the email to lowercase and also checking its suffix ensures the user enters a valid school address and blocks outside domains.
 ### Length Validation
-> Length validation was applied to the Registration Code using `len(registration_code) == 6.` Using Python's len() function ensures the string contains an exact count of 6 characters, matching the required code format.
+> Length validation was applied to the Registration Code using `len(registration_code) == 6.` Using Python's len() function ensures the string contains an exact count of 6 characters, mat
+> ching the required code format.
 ---
 # Part D - Testing
 | Test | Input / Condition | Validation Being Tested | Expected Output | Actual Output | Result |
@@ -233,7 +234,8 @@ print(f"Reg. Code    : {registration_code}")
 # Part E - Output Verification
 ## Verification Test 1
 **Input:**
-```studentName = "Sven Asilum"
+```
+studentName ="Sven Asilum"
 ageInput = "13"
 gradeInput = "8"
 email = "saeasilum@pshs.brc.edu.ph"
@@ -266,7 +268,8 @@ Reg. Code    : 451LUM
 ---
 ## Verification Test 2
 **Input:**
-```studentName = ""
+```
+studentName = ""
 ageInput = "14"
 gradeInput = "9"
 email = "saamolina@pshs.brc.edu.ph"
@@ -290,7 +293,8 @@ Reason: Student name is required.
 ---
 ## Verification Test 3
 **Input:**
-```studentName = "Emmett Forest"
+```
+studentName = "Emmett Forest"
 ageInput = "18"
 gradeInput = "12"
 email = "chiponmyshoulder@gmail.com"
