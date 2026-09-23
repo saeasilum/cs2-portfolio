@@ -1,8 +1,8 @@
 # Fundamentals of Cybersecurity and Data Privacy
-**Activity:** PSHS Secure Club Registration System
-**Name:** Sven Andrei E. Asilum
-**Section:** Dahlia
-**Quarter:** 1
+**Activity:** PSHS Secure Club Registration System  
+**Name:** Sven Andrei E. Asilum  
+**Section:** Dahlia  
+**Quarter:** 1  
 ---
 ## Activity Overview
 In this activity, I analyzed a cybersecurity threat and developed secure data-capture rules for a simple
