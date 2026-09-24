@@ -18,3 +18,7 @@
 > [Input Validation and Output Verification: PSHS Workshop Registration Validator](q1/input_validation.md)
 
 > [PSHS Workshop Registration Validator Script](q1/workshop_validator.py)
+
+> [PSHS Secure Club Registration System](q1/cybersecurity.md)
+
+> [Secure Registration Script](q1/secure_registration.py)
