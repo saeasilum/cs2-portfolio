@@ -55,17 +55,17 @@ Complete the table before writing your program.
 |:---|:---|:---|:---|:---|:---|
 | Student Name | String (non-empty) | Anonymous/invalid record entry | `""` | Reject empty strings after whitespace trimming | `Error: Student name is required.` |
 | Section | Valid section name (e.g. Dahlia) | Processing registrations from invalid/unlisted sections. | `Grade 8` | Must match one of the assigned/valid section names | `Error: Invalid section name.` |
-| Club Choice | Predefined club option | Entering unsupported or unauthorized clubs | `Gaming` | Must be an item from the official club list | `Error: Please choose a valid club. |
-| School Email | | | | | |
-| Attendance Status | | | | | |
+| Club Choice | Predefined club option (Robotics, Science, Mathematics, Programming) | Entering unsupported or unauthorized clubs | `Gaming` | Must be an item from the official club list | `Error: Please choose a valid club.` |
+| School Email | Standard email format | Malformed address preventing notifications | `studentpshs.edu.ph`| Must contain @ and . characters | `Error: Invalid email format. Must require . and @.` |
+| Attendance Status | Valid status option (Present, Absent, Late) | Invalid or unrecognized attendance status | `Excused` | Must match one of the predefined attendance options | `Error: Invalid attendance option` |
 ---
 ## Secure Data Capture Questions
 ### 1. What should your program accept?
-> Write your answer here.
+> The program should accept non-blank names, valid section names, valid choices from the designated club list, email addresses with proper `@` and `.`, structure, and exact attendance statues (`Present`, `Absent`, `Late`).
 ### 2. What should your program reject?
-> Write your answer here.
+> The program should reject blank lines, unauthorized section names, non-listed clubs, malformed emails, unrecognized attendance entries, and any irrelevant private data.
 ### 3. How do your validation rules help reduce incorrect or unsafe input?
-> Write your answer here.
+> The validation rules help reduce incorrect or safe input by acting as a filter. They catch blank inputs, typos, and bad data when the user enters them, stopping wrong information before it can break the program or mess up the system.
 ---
 # Part D - Secure Program Implementation
 ## Program
