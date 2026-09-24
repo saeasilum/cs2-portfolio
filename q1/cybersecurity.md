@@ -53,10 +53,10 @@ Why is it safer to collect only information that the program actually needs?
 Complete the table before writing your program.
 | Data Captured | Expected Input | Possible Risk | Invalid Input Example | Validation Rule | Error
 Message |
-|---|---|---|---|---|---|
-| Student Name | | | | | |
-| Section | | | | | |
-| Club Choice | | | | | |
+|:---|:---|:---|:---|:---|:---|
+| Student Name | String (non-empty) | Anonymous/invalid record entry | `""` | Reject empty strings after whitespace trimming | `Error: Student name is required.` |
+| Section | Valid section name (e.g. Dahlia) | Processing registrations from invalid/unlisted sections. | `Grade 8` | Must match one of the assigned/valid section names | `Error: Invalid section name.` |
+| Club Choice | Predefined club option | Entering unsupported or unauthorized clubs | `Gaming` | Must be an item from the official club list | `Error: Please choose a valid club. |
 | School Email | | | | | |
 | Attendance Status | | | | | |
 ---
