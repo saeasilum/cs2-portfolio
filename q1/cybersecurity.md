@@ -82,47 +82,107 @@ It should **not request passwords, OTPs, banking information, or unnecessary per
 ---
 ## Final Code
 ```python
-# Paste your final program here.
+# PSHS Secure Club Registration System
+
+def main():
+    print("=== PSHS Secure Club Registration System ===\n")
+    
+    # 1. Student Name Validation (Must not be blank)
+    student_name = input("Enter Student Name: ").strip()
+    if not student_name:
+        print("Error: Student name is required.")
+        return
+        
+    # 2. Section Validation (Must match allowed section list)
+    allowed_sections = [
+        "Diamond", "Emerald", "Jade", "Sapphire", 
+        "Dahlia", "Ilang-Ilang", "Rosal", "Sampaguita", 
+        "Beryllium", "Magnesium", "Platinum", "Silicon", 
+        "Electron", "Gluon", "Graviton", "Photon", 
+        "Biology", "Chemistry", "Physics", "Bio-Chemistry"
+    ]
+    section = input("Enter Section: ").strip()
+    matched_section = next((s for s in allowed_sections if s.lower() == section.lower()), None)
+    if not matched_section:
+        print("Error: Invalid section.")
+        return
+        
+    # 3. Club Choice Validation (Must be from allowed list)
+    allowed_clubs = ["Robotics", "Science", "Mathematics", "Programming"]
+    club_choice = input("Enter Club Choice (Robotics, Science, Mathematics, Programming): ").strip()
+    matched_club = next((c for c in allowed_clubs if c.lower() == club_choice.lower()), None)
+    if not matched_club:
+        print("Error: Please choose a valid club.")
+        return
+        
+    # 4. School Email Validation (Must contain @ and .)
+    school_email = input("Enter School Email: ").strip()
+    if "@" not in school_email or "." not in school_email:
+        print("Error: Invalid email format. Must contain @ and .")
+        return
+        
+    # 5. Attendance Status Validation (Must be Present, Absent, or Late)
+    allowed_attendance = ["Present", "Absent", "Late"]
+    attendance_status = input("Enter Attendance Status (Present, Absent, Late): ").strip()
+    matched_attendance = next((a for a in allowed_attendance if a.lower() == attendance_status.lower()), None)
+    if not matched_attendance:
+        print("Error: Invalid attendance status.")
+        return
+        
+    # Success Output
+    print("\n-----------------------------------")
+    print("REGISTRATION ACCEPTED")
+    print("-----------------------------------")
+    print(f"Student: {student_name}")
+    print(f"Section: {matched_section}")
+    print(f"Club: {matched_club}")
+    print(f"Email: {school_email}")
+    print(f"Attendance: {matched_attendance}")
+    print("-----------------------------------")
+
+if __name__ == "__main__":
+    main()
 ```
 ---
 ## Security Practices Applied
 ### Required Input
-> Explain how you handled blank input.
+> I handled the blank inputs by applying `.strip()` to remove leading/trailing spaces and using conditional checks (`if not input_val`) to stop the program and display an error message if any field is left empty.
 ### Allowed Values
-> Explain which fields accept only predefined values.
+> Restricted fields like Section, Club Choice, and Attendance status follow specific lists of predefined values. Inputs are checked against these lists using case-insensitive matching before being accepted.
 ### Format Check
-> Explain your simple email validation rule.
+> I checked school email inputs by verifying that both `@` and `.` exist in the entered string before approving registration.
 ### Error Messages
-> Explain why clear error messages are useful.
+> Error messages are useful because when an input fails validation, it gives the user direct feedback without crashing or exposing system internals.
 ### Data Minimization
-> Explain what information you intentionally did NOT collect and why.
+> I did not collect information such as passwords, OTPs, home addresses, or financial details because they are completely unnecessary for joining a school club. Not collecting them protects student privacy and ensures that even if registration data is leaked or accessed without permission, no private data would be exposed.
 ---
 # Part E - Testing and Reflection
 ## Testing
 | Test | Input Situation | Expected Output | Actual Output | Result |
 |---:|---|---|---|---|
-| 1 | All data valid | | | |
-| 2 | Blank student name | | | |
-| 3 | Invalid section | | | | | | Invalid club choice | | | |
-| 5 | Email missing `@` | | | |
-| 6 | Email missing `.` | | | |
-| 7 | Invalid attendance status | | | |
-| 8 | Different valid inputs | | | |
+| 1 | All data valid | REGISTRATION ACCEPTED | REGISTRATION ACCEPTED | **PASS** |
+| 2 | Blank student name | Rejected | Error: Student name is required. | **PASS** |
+| 3 | Invalid section | Rejected | Error: Invalid section. | **PASS** | 
+| 4 | Invalid club choice | Rejected | Error: Please choose a valid club. | **PASS** |
+| 5 | Email missing `@` | Rejected | Error: Invalid email format. Must contain `@` and `.` | **PASS** |
+| 6 | Email missing `.` | Rejected | Error: Invalid email format. Must contain `@` and `.` | **PASS** |
+| 7 | Invalid attendance status | Rejected | Error: Invalid attendance status. | **PASS** |
+| 8 | Different valid inputs | REGISTRATION ACCEPTED | REGISTRATION ACCEPTED | **PASS** |
 Use:
 - **PASS** if the actual result matches the expected result.
 - **FAIL** if it does not.
 ---
 # Reflection
 ### 1. What is one cybersecurity threat that can affect an application or user?
-> Write your answer here.
+> One cybersecurity threat that can affect an application or user is phishing, where attackers trick users into entering private information such as login credentials or personal information on fake links or deceptive sites.
 ### 2. How can users reduce the risk of phishing or suspicious messages?
-> Write your answer here.
+> Users can reduce the risk of phishing or suspicious messages by avoiding clicking unverified external links, checking sender details carefully, not sharing passwords/OTPs, and double-checking suspicious alerts before taking action.
 ### 3. How can validation rules improve the security of user input?
-> Write your answer here.
+> Validation rules improve the security of user input by acting as a filter at the program boundary. They make sure only safe and properly formatted data is accepted while blocking malformed or unexpected input before it can cause errors or vulnerabilities.
 ### 4. Why should a program avoid collecting unnecessary personal information?
-> Write your answer here.
+> A program should avoid collecting unnecessary personal information because that data can be stolen if the program is ever hacked or leaked. By keeping data collection to only what is necessary, the program keeps student information safe and limits any potential harm.
 ### 5. How did SG7's input validation concepts become security practices in SG8?
-> Write your answer here.
+> Input validation originally prevented program crashes caused by basic user mistakes, such as typing letters into a number field; but it then turned into a security defense that protects system integrity, blocks unsafe or unexpected data from entering the application, and enforces privacy by keeping user data strictly controlled.
 ---
 # Files for This Activity
 - [`secure_registration.py`](secure_registration.py)
