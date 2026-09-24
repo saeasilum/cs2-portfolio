@@ -11,27 +11,25 @@ The goal is to create a program that collects only necessary information and acc
 expected, and appropriate input.
 ---
 # Part A - Cybersecurity Threat Analysis
-## Assigned Case **Case Number:**
-**Case Title:**
-> Briefly describe the case here.
+## Assigned Case **1:**
+**Fake Login Alert:**
+> A message claims that the student's account will be disabled and asks them to click a link and enter their
+username and password.
 ---
 ### 1. What cybersecurity threat is shown?
-> Write your answer here.
+> The cybersecurity threat shown is Phishing Attack / Social Engineering, which is an attempt to trick the user into revealing private login credentials through false urgency and manipulation.
 ### 2. What warning signs make the situation suspicious?
-> Write your answer here.
+> Warning signs that make the situation suspicious are requesting credentials through an external and unverified link, rather through an official school authentication portal, and a high-pressure tactic creating artificial panic (threatening account suspension).
 ### 3. What may be affected?
 Check or describe all that apply:
-- Data
-- Account
-- Application
-- Device
-- Network
-- Financial information
-> Explain your answer.
+- **Data:** Private user data, login credentials, and school records.
+- **Account:** Student portal/school account access.
+- **Device:** Can be potentially infected if the link leads to a malicious software.
+- **Network:** The school network if compromised credentials are used to gain unauthorized internal access.
 ### 4. What information could be exposed or misused?
-> Write your answer here.
+> Student account credentials, private school records, personal email communications, and class submissions.
 ### 5. What should the user do to reduce the risk?
-> Write your answer here.
+> The user should verify account notifications directly by opening a trusted browser window and navigating to the official portal, report the message to school IT personnel, and never click links in unverified or unexpected security alerts.
 ---
 # Part B - Data Privacy and Secure Data Capture
 A proposed Club Registration System wants to collect the following information.
