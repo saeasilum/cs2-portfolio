@@ -34,19 +34,20 @@ username and password.
 A proposed Club Registration System wants to collect the following information.
 Determine whether each item is really necessary.
 | Data | Collect / Do Not Collect | Reason |
-|---|---|---|
-| Student Name | | |
-| Section | | |
-| Club Choice | | |
-| School Email | | |
-| Attendance Status | | |
-| Password | | |
-| OTP | | |
-| Home Address | | | | Parent Bank Account | | |
+|:---|:---|:---|
+| Student Name | COLLECT | Required to identify and register the student. |
+| Section | COLLECT | Required to verify class standing and schedule compatibility. |
+| Club Choice | COLLECT | Required to place student into their chosen club group. |
+| School Email | COLLECT | Required for official club announcements and communications. |
+| Attendance Status | COLLECT | Required for tracking attendance during club periods. |
+| Password | DO NOT COLLECT | Highly private and unnecessary. Registration forms do not require account access credentials. |
+| OTP | DO NOT COLLECT | One-Time Passwords are strictly for multi-factor authentication and must never be gathered through a form. |
+| Home Address | DO NOT COLLECT | Irrelevant to school club participation and poses an unnecessary privacy risk. | 
+| Parent Bank Account | DO NOT COLLECT | Extremely high security risk and completely no relevance to joining a school club. |
 ---
 ## Privacy Question
 Why is it safer to collect only information that the program actually needs?
-> Write your answer here.
+> It is safer to collect only information that the program actually needs as it keeps user data safer because every piece of data stored is a risk. If a system gets hacked, leaked, or accessed by unauthorized people, any unnecessary information such as passwords, home addresses, or financial details, can be stolen and be misused to harm the user. By keeping data collection to a minimum, the system limits the amount of personal information exposed in the event of a security breach.
 ---
 # Part C - Security-Focused Validation Rules
 Complete the table before writing your program.
