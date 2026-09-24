@@ -21,7 +21,6 @@ username and password.
 ### 2. What warning signs make the situation suspicious?
 > Warning signs that make the situation suspicious are requesting credentials through an external and unverified link, rather through an official school authentication portal, and a high-pressure tactic creating artificial panic (threatening account suspension).
 ### 3. What may be affected?
-Check or describe all that apply:
 - **Data:** Private user data, login credentials, and school records.
 - **Account:** Student portal/school account access.
 - **Device:** Can be potentially infected if the link leads to a malicious software.
