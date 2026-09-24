@@ -54,10 +54,10 @@ Complete the table before writing your program.
 | Data Captured | Expected Input | Possible Risk | Invalid Input Example | Validation Rule | Error Message |
 |:---|:---|:---|:---|:---|:---|
 | Student Name | String (non-empty) | Anonymous/invalid record entry | `""` | Reject empty strings after whitespace trimming | `Error: Student name is required.` |
-| Section | Valid section name (e.g. Dahlia) | Processing registrations from invalid/unlisted sections. | `Grade 8` | Must match one of the assigned/valid section names | `Error: Invalid section name.` |
+| Section | Valid section name (e.g. Dahlia) | Processing registrations from invalid/unlisted sections. | `Grade 8` | Must match one of the assigned/valid section names | `Error: Invalid section.` |
 | Club Choice | Predefined club option (Robotics, Science, Mathematics, Programming) | Entering unsupported or unauthorized clubs | `Gaming` | Must be an item from the official club list | `Error: Please choose a valid club.` |
-| School Email | Standard email format | Malformed address preventing notifications | `studentpshs.edu.ph`| Must contain @ and . characters | `Error: Invalid email format. Must require . and @.` |
-| Attendance Status | Valid status option (Present, Absent, Late) | Invalid or unrecognized attendance status | `Excused` | Must match one of the predefined attendance options | `Error: Invalid attendance option` |
+| School Email | Standard email format | Malformed address preventing notifications | `studentpshs.edu.ph`| Must contain @ and . characters | `Error: Invalid email format. Must contain '.' and '@'.` |
+| Attendance Status | Valid status option (Present, Absent, Late) | Invalid or unrecognized attendance status | `Excused` | Must match one of the predefined attendance options | `Error: Invalid attendance status` |
 ---
 ## Secure Data Capture Questions
 ### 1. What should your program accept?
@@ -103,7 +103,7 @@ It should **not request passwords, OTPs, banking information, or unnecessary per
 |---:|---|---|---|---|
 | 1 | All data valid | | | |
 | 2 | Blank student name | | | |
-| 3 | Invalid section | | | | | 4 | Invalid club choice | | | |
+| 3 | Invalid section | | | | | | Invalid club choice | | | |
 | 5 | Email missing `@` | | | |
 | 6 | Email missing `.` | | | |
 | 7 | Invalid attendance status | | | |
