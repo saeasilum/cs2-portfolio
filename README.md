@@ -25,4 +25,4 @@
 
 ---
 ### Quarter 2
-> [The Canteen Purchase Calculator Script](q2/canteenpurchasecalculator.py) 
+> [Canteen Purchase Calculator Script](q2/canteenpurchasecalculator.py) 
