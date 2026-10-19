@@ -22,3 +22,7 @@
 > [PSHS Secure Club Registration System](q1/cybersecurity.md)
 
 > [Secure Registration Script](q1/secure_registration.py)
+
+---
+### Quarter 2
+> [The Canteen Purchase Calculator Script](q2/canteenpurchasecalculator.py) 
