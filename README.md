@@ -25,4 +25,6 @@
 
 ---
 ### Quarter 2
-> [Canteen Purchase Calculator Script](q2/canteenpurchasecalculator.py) 
+> [Canteen Purchase Calculator Script](q2/canteenpurchasecalculator.py)
+
+> [Student Performance Evaluator Script](q2/studentperformanceevaluator.py) 
