@@ -42,4 +42,19 @@ print(f"Average: {avg:.2f}")
 print(f"Performance: {performance}")
 print(f"Eligible for Challenge: {eligible}")
 
+# ==========================================
+# DOCUMENTATION QUESTIONS & ANSWERS
+# ==========================================
+# 1. Which function returns a number, which returns a string, and which returns a Boolean?
+# - calculate_average() returns a numerical average. 
+# - get_performance() returns a string representing the performance category. 
+# - is_eligible() returns a Boolean value (True or False). 
 
+# 2. Explain how the average moves from calculate_average() into get_performance().
+# - The calculate_average() function computes the value and then sends it back using the return statement. That returned value is stored in a variable, which is then passed as an argument into get_performance(). 
+
+# 3. What happens when a student has a high average but has completed fewer than three tasks?
+# - If a student has a high average but has completed fewer than three tasks, then the student will not be eligible for the practice challenge. (This is because the is_eligible() function requires both conditions to be met (an average of at least 85 AND at least 3 completed tasks)). 
+
+# 4. Why is return more appropriate than simply printing the result inside each function?
+# - Using return is more appropiate than simply printing the result inside each function as it sends the data back to the main program so it can be stored in variables and reused. Simply printing only displays the text on the screen and does not allow other functions or conditional statements to access that value.
