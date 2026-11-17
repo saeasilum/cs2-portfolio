@@ -4,7 +4,7 @@
 # If a number divided by 3 leaves a remainder of 0, it means that number is a multiple of 3.
 
 for i in range(1, 16):
-    # The modulo operator (%) checks if the number is a multiple of 3
+    # Checks if the number is a multiple of 3
     if i % 3 == 0:
         continue  # Skips the rest of the loop for this number and then moves to the next
     
