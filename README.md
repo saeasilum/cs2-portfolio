@@ -29,6 +29,7 @@
 
 > [Student Performance Evaluator Script](q2/studentperformanceevaluator.py)
 
+## Programming Exercises
 > [Exercise 1: Count Even Numbers](q2/exercise1.py)
 
 > [Exercise 2: The Countdown Timer](q2/exercise2.py)
