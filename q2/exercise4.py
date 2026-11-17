@@ -4,8 +4,8 @@
 # Define the function that calculates and prints the table
 def show_table(number):
     for i in range(1, 11):
-        result = number * i
-        print(f"{number} x {i} = {result}")
+        result = number * i # Multiply the input number by the current loop multiplier (i).
+        print(f"{number} x {i} = {result}") # Print the equation and its calculated result using an f-string for formatting.
 
 # Asks for a number and converts the user input into an integer
 user_input = int(input("Enter a number: "))
