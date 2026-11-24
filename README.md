@@ -30,6 +30,7 @@
 > [Student Performance Evaluator Script](q2/studentperformanceevaluator.py)
 
 #### Programming Exercises
+### Loops
 > [Exercise 1: Count Even Numbers](q2/exercise1.py)
 
 > [Exercise 2: The Countdown Timer](q2/exercise2.py)
@@ -37,3 +38,5 @@
 > [Exercise 3: Skip Multiples](q2/exercise3.py)
 
 > [Exercise 4: Multiplication Table Generator](q2/exercise4.py)
+
+### Index
