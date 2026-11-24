@@ -40,3 +40,6 @@
 > [Exercise 4: Multiplication Table Generator](q2/exercise4.py)
 
 ##### Index
+> [Exercise 1: My School Bag](q2/exercise2_1.py)
+
+> [Exercise 2: Travel Destination Manager](q2/exercise2_2.py) 
